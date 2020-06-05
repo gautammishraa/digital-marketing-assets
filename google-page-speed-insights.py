@@ -47,7 +47,7 @@ for i in range(0, len(df)):
 
         #[use your own API key for page speed insights]
         # Make request
-        pagespeed_results = urllib.request.urlopen('https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={}/&strategy=mobile&key=AIzaSyChv9I9NdMJSue4rXbPJPE195Gudy2mMec'\
+        pagespeed_results = urllib.request.urlopen('https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={}/&strategy=mobile&key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'\
             .format(url)).read().decode('UTF-8')
 
         # Convert to json format
