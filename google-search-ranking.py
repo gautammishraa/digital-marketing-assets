@@ -13,7 +13,7 @@ import time
 
 #Read a csv file
 uploaded = files.upload() 
-column_header='keyword' #name of the column
+column_header='Keyword' #name of the column
 
 #Read CSV file in Google Colab
 for key in uploaded.keys():
