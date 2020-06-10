@@ -9,11 +9,11 @@ import io
 import time
 
 
-#Upload the CSV file consisting of Keywords (Make sure the header of column is "Keyword"
+#Upload the CSV file consisting of Keywords (Make sure the header of column is "keyword"
 
 #Read a csv file
 uploaded = files.upload() 
-column_header='Keyword' #name of the column
+column_header='keyword' #name of the column
 
 #Read CSV file in Google Colab
 for key in uploaded.keys():
