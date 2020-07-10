@@ -26,7 +26,11 @@ num = int(input("No of Google Search Results to look into, eg: 10, 20, 30:"))
 
 #take domain name from user
 
-domain_name = input("Enter your domain name:"))
+domain_name = input("Enter your domain name:")
+
+url_list = []
+keyword = []
+rank = []
 
 for i in range(0, len(df)):
   print('Processing Keyword #', i+1)
@@ -37,7 +41,7 @@ for i in range(0, len(df)):
     kw = key
     keyword.append(kw)
     rank.append(i)
-  time.sleep(30)
+  time.sleep(20)
   
 d = {'Keyword': keyword, 'Rank':rank, 'URL': url_list}
 
