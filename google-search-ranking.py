@@ -47,4 +47,7 @@ d = {'Keyword': keyword, 'Rank':rank, 'URL': url_list}
 
 
 result = pd.DataFrame(d)
-result[result['URL'].str.contains(domain_name)]
+result = result[result['URL'].str.contains(domain_name)]
+
+result.to_csv('keyword_ranking.csv') 
+files.download('keyword_ranking.csv')
